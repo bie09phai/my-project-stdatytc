@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยเทคนิคยะลา - Yala Technical College</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        
+        /* ปรับแต่ง Navbar */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            font-weight: 600;
+            color: #333 !important;
+        }
+        .nav-link:hover {
+            color: #0d6efd !important;
+        }
+
+        /* ส่วน Hero Banner */
+        .hero-section {
+            background: linear-gradient(rgba(0, 50, 100, 0.7), rgba(0, 50, 100, 0.7)), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* เปลี่ยนเป็นรูปวิทยาลัยจริงที่นี่ */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* ส่วนหลักสูตร */
+        .course-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+        .icon-box {
+            font-size: 3rem;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        /* ส่วน Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="#">
+                <i class="fas fa-graduation-cap"></i> วิทยาลัยเทคนิคยะลา
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">หลักสูตร</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">ข่าวประชาสัมพันธ์</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-4 ms-2" href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">สร้างคนดี มีฝีมือ สู่สังคม</h1>
+            <p class="lead mb-4">วิทยาลัยเทคนิคยะลา มุ่งมั่นจัดการอาชีวศึกษาเพื่อพัฒนาช่างเทคนิค<br>และนักเทคโนโลยีที่มีคุณภาพ ตอบสนองความต้องการของตลาดแรงงาน</p>
+            <a href="#courses" class="btn btn-primary btn-lg px-5 me-2">ดูหลักสูตร</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-5">สมัครเรียน</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About College" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h6 class="text-primary fw-bold">เกี่ยวกับวิทยาลัย</h6>
+                    <h2 class="fw-bold mb-3">ผู้นำด้านการศึกษาวิชาชีพในจังหวัดยะลา</h2>
+                    <p class="text-muted">วิทยาลัยเทคนิคยะลา เป็นสถานศึกษาที่มุ่งเน้นการผลิตและพัฒนากำลังคนด้านวิชาชีพ ให้มีความรู้ ความสามารถ และทักษะวิชาชีพที่ได้มาตรฐานสากล ควบคู่ไปกับการมีคุณธรรม จริยธรรม</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-success me-2"></i> บุคลากรมีความเชี่ยวชาญ</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> เครื่องมือและอุปกรณ์ทันสมัย</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> ความร่วมมือกับสถานประกอบการชั้นนำ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold">หลักสูตรของเรา</h6>
+                <h2 class="fw-bold">ประเภทวิชาที่เปิดสอน</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card course-card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>ช่างอุตสาหกรรม</h4>
+                        <p class="text-muted">ช่างยนต์, ช่างกลโรงงาน, ช่างเชื่อม, ช่างไฟฟ้า, ช่างอิเล็กทรอนิกส์ ฯลฯ</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card course-card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>เทคโนโลยีสารสนเทศ</h4>
+                        <p class="text-muted">เทคโนโลยีสารสนเทศ, คอมพิวเตอร์ธุรกิจ, การพัฒนาซอฟต์แวร์</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card course-card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h4>สถาปัตยกรรมและก่อสร้าง</h4>
+                        <p class="text-muted">ช่างก่อสร้าง, สถาปัตยกรรม, การสำรวจ, โยธา</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">รายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h1 class="fw-bold">85+</h1>
+                    <p>คณาจารย์ผู้ทรงคุณวุฒิ</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h1 class="fw-bold">20+</h1>
+                    <p>สาขาวิชาที่เปิดสอน</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h1 class="fw-bold">3,500+</h1>
+                    <p>นักเรียนนักศึกษา</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h1 class="fw-bold">100%</h1>
+                    <p>จบแล้วมีงานทำ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">วิทยาลัยเทคนิคยะลา</h5>
+                    <p>มุ่งมั่นพัฒนาวิชาชีพ สู่มาตรฐานสากล เพื่อพัฒนาชายแดนใต้</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">ลิงก์ด่วน</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">ระบบรับสมัครนักศึกษา</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">ตรวจสอบผลการเรียน</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">ดาวน์โหลดเอกสาร</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">ติดต่อเรา</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> ถนนราษฎร์อุทิศ ตำบลสะเตง อำเภอเมือง จังหวัดยะลา 95000</p>
+                    <p><i class="fas fa-phone me-2"></i> 073-212-XXX</p>
+                    <p><i class="fas fa-envelope me-2"></i> saraban@yala.ac.th</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-line fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 วิทยาลัยเทคนิคยะลา. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
